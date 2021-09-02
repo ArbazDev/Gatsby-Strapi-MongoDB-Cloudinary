@@ -61,13 +61,13 @@ exports.createPages = async function ({ actions, graphql }) {
       nodes {
         Slug
         title
-        image {
+        image [
           localFile {
             childrenImageSharp {
               gatsbyImageData
             }
           }
-        }
+        ]
         body
         date
       }
@@ -75,13 +75,13 @@ exports.createPages = async function ({ actions, graphql }) {
     allStrapiPortfolio {
       nodes {
         Slug
-        image {
+        image [
           localFile {
             childImageSharp {
               gatsbyImageData
             }
           }
-        }
+        ]
         title
         body
         categories
