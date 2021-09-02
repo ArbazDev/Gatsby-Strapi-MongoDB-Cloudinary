@@ -62,9 +62,9 @@ exports.createPages = async function ({ actions, graphql }) {
         Slug
         title
         image {
-          localFile {
-            childrenImageSharp {
-              gatsbyImageData
+          formats{
+            large{
+              url
             }
           }
         }
@@ -76,9 +76,9 @@ exports.createPages = async function ({ actions, graphql }) {
       nodes {
         Slug
         image {
-          localFile {
-            childImageSharp {
-              gatsbyImageData
+          formats{
+            large{
+              url
             }
           }
         }

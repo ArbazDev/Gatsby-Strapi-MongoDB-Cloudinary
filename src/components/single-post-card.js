@@ -1,17 +1,17 @@
-import React, { Fragment } from "react";
-import AuthorCard from "@/components/author-card";
-import Comments from "@/components/comments";
-import blogDetailsImage from "@/images/blog/7.jpg";
-import ReactMarkdown from "react-markdown";
+// import React, { Fragment } from "react";
+// import AuthorCard from "@/components/author-card";
+// import Comments from "@/components/comments";
+// import blogDetailsImage from "@/images/blog/7.jpg";
+// import ReactMarkdown from "react-markdown";
 
-const SinglePostCard = (data) => {
-  console.log(data.data.pageContext.data)
-  // console.log(data.data.pageContext.data.image.localFile.childrenImageSharp[0].gatsbyImageData.images.fallback.src)
-  return (
-    <Fragment>
+// const SinglePostCard = (data) => {
+//   console.log(data.data.pageContext.data)
+//   // console.log(data.data.pageContext.data.image.localFile.childrenImageSharp[0].gatsbyImageData.images.fallback.src)
+//   return (
+//     <Fragment>
      
-    </Fragment>
-  );
-};
+//     </Fragment>
+//   );
+// };
 
-export default SinglePostCard;
+// export default SinglePostCard;
