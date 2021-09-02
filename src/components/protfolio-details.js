@@ -44,13 +44,7 @@ const ProtfolioDetails = (data) => {
 
           <Col className="Col-lg-3" >
             <Row lg={3} md={7} sm={12}>
-              {/* <div className="portDetailThumb" onClick = {()=>{ModalPortfolio}}> */}
-//               {data.data.pageContext.data.image.map((img, index) => (
-//                 <div className="portDetailThumb" onClick={() => setModalIsOpen(true)}>
-//                   <img src={img.localFile.childImageSharp.gatsbyImageData.images.fallback.src}></img>
-//                 </div>
-//               ))}
-              {/* </div> */}
+             
               <Col lg={4} md={5} sm={12}>
                 <div className="singlePortfoio_content">
                   <h3>{data.data.pageContext.data.title}</h3>
