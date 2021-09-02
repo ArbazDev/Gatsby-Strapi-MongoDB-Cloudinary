@@ -17,6 +17,7 @@
     "gatsby-plugin-react-helmet": "^4.0.0",
     "gatsby-plugin-sharp": "^3.11.0",
     "gatsby-source-filesystem": "^3.11.0",
+    "gatsby-source-strapi": "^1.0.2",
     "gatsby-transformer-sharp": "^3.11.0",
     "mdast-util-from-markdown": "^1.0.0",
     "node-gyp": "^8.2.0",
