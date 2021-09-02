@@ -35,7 +35,7 @@ module.exports = {
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `https://strapi-final-codestorm.herokuapp.com/git`,
+        apiURL: `https://strapi-final-codestorm.herokuapp.com`,
         queryLimit: 1000, // Defaults to 100
         collectionTypes: [`article`, `Csteam` , `portfolio`],
         // singleTypes: [`home-page`, `contact`],
