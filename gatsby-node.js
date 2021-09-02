@@ -94,6 +94,7 @@ exports.createPages = async function ({ actions, graphql }) {
   }  
   `);
   data.allStrapiArticle.nodes.forEach(node => {
+    console.log("node");
     // console.log("init");
     // console.log(node);
     const slug = node.Slug
@@ -133,7 +134,7 @@ exports.createPages = async function ({ actions, graphql }) {
   // `)
   data.allStrapiPortfolio.nodes.forEach(node => {
     // console.log("init");
-    console.log(node);
+    console.log("portfolio",node);
     const sluggish = node.Slug
     actions.createPage({
       path: '/portfolio/' + sluggish,

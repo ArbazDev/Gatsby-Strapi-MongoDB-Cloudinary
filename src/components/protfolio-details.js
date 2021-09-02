@@ -17,6 +17,7 @@ import SwiperCore, { Pagination, Navigation } from "swiper";
 SwiperCore.use([Pagination, Navigation]);
 const ProtfolioDetails = (data) => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
+  console.log("imgdata1",data)
   if (modalIsOpen == true) {
     return (
       // <div>
@@ -39,48 +40,8 @@ const ProtfolioDetails = (data) => {
     return (
       <section className="commonSection porfolioDetail">
         <Container>
-          {/* <div className="swiper-pagination" id="team-carousel-pagination"></div> */}
 
-          <Col className="Col-lg-3" >
-            <Row lg={3} md={7} sm={12}>
-              {/* <div className="portDetailThumb" onClick = {()=>{ModalPortfolio}}> */}
-              {data.data.pageContext.data.image.map((img, index) => (
-                <div className="portDetailThumb" onClick={() => setModalIsOpen(true)}>
-                  <img src={img.localFile.childImageSharp.gatsbyImageData.images.fallback.src}></img>
-                </div>
-              ))}
-              {/* </div> */}
-              <Col lg={4} md={5} sm={12}>
-                <div className="singlePortfoio_content">
-                  <h3>{data.data.pageContext.data.title}</h3>
-                  <ReactMarkdown children={data.data.pageContext.data.body} />
-                </div>
-                <div className="singlePortfoio_content">
-                  <h4>Category:</h4>
-                  <p>
-                    {data.data.pageContext.data.categories}
-                    {/* {categories.map(({ name }, index) => (
-                  <a key={index} href={url}>
-                    {name},
-                  </a>
-                ))} */}
-                  </p>
-                </div>
-                <div className="singlePortfoio_content">
-                  <h4>Date:</h4>
-                  <p>{data.data.pageContext.data.date}</p>
-                </div>
-                {/* <Modal
-                  open={modalIsOpen}
-                //  onAfterOpen={afterOpenModal}
-                // onRequestClose={closeModal}
-                >
-                  my Modal
-                </Modal> */}
-                {/* <div className="swiper-pagination" id="team-carousel-pagination"></div> */}
-              </Col>
-            </Row>
-          </Col>
+
         </Container>
       </section>
     );
