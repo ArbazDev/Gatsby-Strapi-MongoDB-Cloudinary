@@ -40,42 +40,8 @@ const ProtfolioDetails = (data) => {
     return (
       <section className="commonSection porfolioDetail">
         <Container>
-          {/* <div className="swiper-pagination" id="team-carousel-pagination"></div> */}
 
-          <Col className="Col-lg-3" >
-            <Row lg={3} md={7} sm={12}>
-             
-              <Col lg={4} md={5} sm={12}>
-                <div className="singlePortfoio_content">
-                  <h3>{data.data.pageContext.data.title}</h3>
-                  <ReactMarkdown children={data.data.pageContext.data.body} />
-                </div>
-                <div className="singlePortfoio_content">
-                  <h4>Category:</h4>
-                  <p>
-                    {data.data.pageContext.data.categories}
-                    {/* {categories.map(({ name }, index) => (
-                  <a key={index} href={url}>
-                    {name},
-                  </a>
-                ))} */}
-                  </p>
-                </div>
-                <div className="singlePortfoio_content">
-                  <h4>Date:</h4>
-                  <p>{data.data.pageContext.data.date}</p>
-                </div>
-                {/* <Modal
-                  open={modalIsOpen}
-                //  onAfterOpen={afterOpenModal}
-                // onRequestClose={closeModal}
-                >
-                  my Modal
-                </Modal> */}
-                {/* <div className="swiper-pagination" id="team-carousel-pagination"></div> */}
-              </Col>
-            </Row>
-          </Col>
+
         </Container>
       </section>
     );
